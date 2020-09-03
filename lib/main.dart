@@ -1,3 +1,4 @@
+import 'package:app/managers/network_manager.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -61,6 +62,8 @@ class _MyHomePageState extends State<MyHomePage> {
       // called again, and so nothing would appear to happen.
       _counter++;
     });
+
+    NetworkManager().getGoogleCom();
   }
 
   @override
